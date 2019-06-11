@@ -5,6 +5,6 @@ export const fetchUser = () => {
     return function(dispatch) {
         axios
         .get('/api/current_user')
-        .then(res => dispatch({ FETCH_USER, paylod: res}));
+        .then(res => dispatch({ type: FETCH_USER, paylod: res.data}));
     };
 };
