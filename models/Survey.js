@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
-import RecipientSchema from ('./Recipient');
+const RecipientSchema = require('./Recipient');
 
 const surveySchema = new Schema ({
     title: String,
     body: String,
     subject: String,
-    recipients: [recipientSchema],
+    recipients: [RecipientSchema],
     yes: { type: Number, default: 0},
     no: { type: Number, default: 0}
 });
