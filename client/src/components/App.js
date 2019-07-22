@@ -8,6 +8,7 @@ import Landing  from './Landing';
 import Dashboard from './Dashboard';
 import SurveyNew from './surveys/SurveyNew';
 
+/* this is a comment */
 class App extends Component {
     componentDidMount() {
         this.props.fetchUser();
